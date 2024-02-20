@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: rgb(46, 4, 46);
+}
+
+#confettiCanv{
+    display: none;
+}
+
+html, body{
+    height: 100%;
+    background-image: url("gradientbck.webp");
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.endScreen{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9bec7;
+    border-radius: 10px;
+    filter: drop-shadow(purple .5rem .5rem 3px);
+    display: none;
+}
+
+.middle{
+    text-align: center;
+}
+
+.endScreen ul{
+    list-style:none;
+    padding: 0;
+    text-align: center;
+}
+
+.endScreen ul li{
+    margin: 5px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.endScreen ul li::before{
+    content: "❤︎";
+}
+
+.question{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9bec7;
+    border-radius: 10px;
+    filter: drop-shadow(purple .5rem .5rem 3px);
+    display: "block";
+    
+}
+
+.question h2 {
+    text-align: center;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.4s;
+}
+
+button{
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    padding: 20px;
+}
+
+#score{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: purple;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.clicked{
+    background: red;
+}
+
+.clicked.correct{
+    background: green;
+}
+
+.answerReveal{
+    display: none;
+}
+
+.endScreen h2 {
+    text-align: center;
+}
